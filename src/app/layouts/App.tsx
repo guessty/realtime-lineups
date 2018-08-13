@@ -1,42 +1,25 @@
 import React from 'react'
-import { Router, Link, Switch, Route } from 'react-static'
+import { Router, Switch, Route } from 'react-static'
 import { hot } from 'react-hot-loader'
 import Routes from 'react-static-routes'
-import styled, { injectGlobal } from 'styled-components'
+import { injectGlobal } from 'styled-components'
 //
 import Home from './../pages/Home'
 
 injectGlobal`
+  html {
+    font-size: 62.5%;
+  }
   body {
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
       'Lucida Grande', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1.6rem;
     margin: 0;
     padding: 0;
   }
-`
-
-const AppStyles = styled.div`
-  a {
-    text-decoration: none;
-    color: #108db8;
-    font-weight: bold;
-  }
-  nav {
-    width: 100%;
-    background: #108db8;
-    a {
-      color: white;
-      padding: 1rem;
-      display: inline-block;
-    }
-  }
-  .content {
-    padding: 1rem;
-  }
-  img {
-    max-width: 100%;
+  *, *:after, *:before {
+    box-sizing: border-box !important;
   }
 `
 
@@ -62,14 +45,10 @@ const RenderRoutes = ({ getComponentForPath }:RoutesProps) => (
 
 const App = () => (
   <Router>
-    <AppStyles>
-      <div className="content">
-        <Switch>
-          <Route path="/" component={Home} exact={true} />
-          <Routes>{RenderRoutes}</Routes>
-        </Switch>
-      </div>
-    </AppStyles>
+    <Switch>
+      <Route path="/" component={Home} exact={true} />
+      <Routes>{RenderRoutes}</Routes>
+    </Switch>
   </Router>
 )
 

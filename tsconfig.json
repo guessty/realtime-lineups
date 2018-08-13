@@ -15,7 +15,9 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "baseUrl": ".",
-    "paths": {},
+    "paths": {
+      "config": ["./src/app/config"]
+    },
     "typeRoots": [
       "./node_modules/@types"
     ],

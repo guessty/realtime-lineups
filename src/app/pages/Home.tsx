@@ -1,15 +1,17 @@
 import React from 'react'
+import { Head } from 'react-static'
 
-class Home extends React.PureComponent {
+//
+import TeamLineup from './../containers/TeamLineup'
 
-  render() {
-    return (
-      <div>
-        <h1 style={{ textAlign: 'center' }}>Welcome to</h1>
-        <img src="assets/logo.png" alt="" />
-      </div>
-    );
-  }
-}
 
-export default Home;
+const HomePage = () => (
+  <div>
+    <Head>
+      <title>Team Lineup</title>
+    </Head>
+    <TeamLineup />
+  </div>
+)
+
+export default HomePage
