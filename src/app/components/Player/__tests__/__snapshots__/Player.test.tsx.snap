@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Player /> capturing Snapshot of Player 1`] = `
+<div
+  className="sc-bdVaJa dnNKUV"
+>
+  <div
+    className="player"
+  >
+    <h4
+      className="player__details"
+    >
+      1
+      <br />
+      (
+      GK
+      )
+    </h4>
+    <div
+      className="player__shirt"
+    />
+  </div>
+</div>
+`;

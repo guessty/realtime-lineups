@@ -7,5 +7,3 @@ export const TEXT = {
 }
 
 export const DATETIME_FORMAT = 'MMMM Do YYYY, h:mm:ss a'
-
-export const FETCH_URL = 'http://lineups.dev.fantech.io'

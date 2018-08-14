@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 //
 
 // The secret to using non-static routes is here.

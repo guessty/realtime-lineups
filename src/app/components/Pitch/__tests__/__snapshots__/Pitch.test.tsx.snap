@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pitch /> capturing Snapshot of Pitch 1`] = `
+<div
+  className="pitch sc-ifAKCX bXqWpb"
+>
+  <div
+    className="sc-bwzfXH hhzUwB"
+  />
+</div>
+`;

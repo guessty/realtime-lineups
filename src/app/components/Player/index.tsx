@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 //
 import StyledPlayer from './StyledPlayer'
 
@@ -12,12 +12,14 @@ interface PlayerProps {
 const parseName = (name:string) => name.split(' ').slice(1).join(' ')
 
 const Player = (props:PlayerProps) => (
-  <StyledPlayer>
-    <div className="player">
-      <h4 className="player__details">{parseName(props.name)}<br/>({props.position})</h4>
-      <div className="player__shirt" />
-    </div>
-  </StyledPlayer>
+  <React.Fragment>
+    <StyledPlayer>
+      <div className="player">
+        <h4 className="player__details">{parseName(props.name)}<br/>({props.position})</h4>
+        <div className="player__shirt" />
+      </div>
+    </StyledPlayer>
+  </React.Fragment>
 );
 
 export default Player

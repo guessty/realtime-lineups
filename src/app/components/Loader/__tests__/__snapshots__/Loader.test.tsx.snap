@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loader /> capturing Snapshot of Loader 1`] = `
+<div
+  className="sc-bdVaJa khUSez"
+>
+  <h1>
+    Loading...
+  </h1>
+</div>
+`;
