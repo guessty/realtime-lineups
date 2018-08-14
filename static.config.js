@@ -1,4 +1,5 @@
 import path from 'path'
+import webpack from 'webpack'
 import React, { Component } from 'react'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import { ServerStyleSheet } from 'styled-components'
@@ -78,7 +79,12 @@ export default {
       },
     ]
     if (process.env.REACT_STATIC_ENV === 'production') {
-      config.plugins = [new ExtractTextPlugin('styles.css')]
+      config.plugins = [
+        new ExtractTextPlugin('styles.css'),
+        new webpack.EnvironmentPlugin({
+          REACT_STATIC_ENV: 'production',
+        }),
+      ]
     }
     return config
   },

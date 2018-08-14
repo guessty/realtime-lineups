@@ -21,3 +21,8 @@ The project also includes tests written with `jest` and `enzyme`, but the tests 
 2) `npm install` or `yarn`
 
 3) `npm run start` or `yarn start` to run dev server
+
+
+## Hosting
+
+As an extra little bonus I also got the project hosted on firebase (https://team-lineups.firebaseapp.com)
